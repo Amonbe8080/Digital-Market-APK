@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <Button
+        android:id="@+id/btnIngresar2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="161dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/btn_dark_blue"
+        android:cursorVisible="true"
+        android:enabled="false"
+        android:foreground="#FF5722"
+        android:foregroundGravity="center"
+        android:text="Actualizar"
+        android:textColor="@color/colorDarkBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="127dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="Nombres (*)"
+        android:inputType="textPersonName"
+        android:paddingRight="30dp"
+        android:text="Sebastian"
+        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="377dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="400dp"
+        android:ems="10"
+        android:hint="Documento de Identidad (*)"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText16"
+        tools:text="1007222463" />
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="332dp"
+        android:ems="10"
+        android:hint="Correo Electronico (*)"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText21"
+        tools:text="alvarezperezsebastian2014@gmail.com" />
+
+    <EditText
+        android:id="@+id/editText23"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="268dp"
+        android:ems="10"
+        android:hint="Dirección (*)"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText22"
+        tools:text="CRA 90 12 # 695" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="196dp"
+        android:ems="10"
+        android:hint="Celular (*)"
+        android:inputType="phone"
+        android:text="3145415878"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText23" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Apellidos (*)"
+        android:inputType="textPersonName"
+        android:paddingRight="5dp"
+        android:text="Alvarez Perez"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrige o actualiza tus datos."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar datos"
+        android:textColor="#FF5722"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:src="@drawable/waves_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
