@@ -47,6 +47,10 @@ public class menu extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        //TODO Cargar gif
+        // ImageView imageView = (ImageView) findViewById(R.id.loadhello);
+        // Glide.with(this).load(R.drawable.hellogif).into(imageView);
     }
 
     @Override
